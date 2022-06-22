@@ -1,0 +1,230 @@
+/* CodeSolidarity Template */
+
+body{
+    background-color: #151515;
+    color: #2e9fcc;
+    font-family: 'Open Sans', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    text-align: justify;
+    overflow: hidden;
+}
+::-webkit-scrollbar { display: none; } 
+
+
+p{
+    color: #57c7c7;
+    text-shadow: 0px 0px 5px #438eacb7;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-family: '';
+    color: #57c7c757;
+    text-shadow: 0px 0px 10px #438eacb7;
+}
+/* Textlerin Bitişi */
+
+.image{
+  position: relative;
+  bottom: 80px;
+}
+
+.play{
+  background-color: #2c2c2c38;
+  background-image: url("/img/bg.png");
+  height: 300px;
+  line-height: 50px;  
+  border-radius: 20px;
+}
+
+.açelyatext a {
+  font-size: 23px;
+  color: #57c7c7;
+  text-shadow: 0px 0px 5px #438eacb7;
+  text-decoration: none;
+  position: relative;
+  top: 120px;
+  left: 50px;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.açelyatext a:hover {
+  font-size: 22px;
+  color: #57c7c7a2;
+  text-decoration: underline;
+  transition: 0.4s;
+}
+
+.social-icons{
+  display: flex;
+}
+.social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 0.5rem;
+  top: 40px;
+  left: 1000px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: "Halvetica Neue",sans-serif,"Arial";
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: inset 1px 1px 1px #121212b0,
+              inset -1px -2px 1px #121212b0,
+              5px 5px 10px #121212b0,
+              -2px -2px 2px #121212b0;
+  border: 2px solid #57c7c7;     
+  text-shadow: 0px 0px 5px #438eacb7;
+  z-index: 1;       
+}
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+/* color */
+.social-icon--github{
+  background: #15151500;
+  color: #57c7c7;
+  text-shadow: 0px 0px 5px #438eacb7;
+}
+.social-icon--twitter{
+  background: #15151500;
+  color: #57c7c7;
+  text-shadow: 0px 0px 5px #438eacb7;
+}
+.social-icon--youtube{
+  background: #15151500;
+  color: #57c7c7;
+  text-shadow: 0px 0px 5px #438eacb7;
+}
+.social-icon--instagram{
+  background: #15151500;
+  color: #57c7c7;
+  text-shadow: 0px 0px 5px #438eacb7;
+}
+/* Hover Effect*/
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon--codepen .tooltip{
+  background: #000;
+  columns: currentColor;
+}
+.social-icon--codepen .tooltip::after{
+  border-top-color: black;
+}
+
+.social-icon--twitter .tooltip{
+  background: #000;
+  columns: currentColor;
+}
+.social-icon--twitter .tooltip::after{
+  border-top-color: #000;
+}
+
+.social-icon--youtube .tooltip{
+  background: #000;
+  columns: currentColor;
+}
+.social-icon--youtube .tooltip::after{
+  border-top-color: #000;
+}
+
+.social-icon--instagram .tooltip{
+  background: #000;
+  columns: currentColor;
+}
+.social-icon--instagram .tooltip:after{
+  border-top-color: #000;
+}
+
+
+.social-icon--github .tooltip{
+  background: #000;
+  columns: currentColor;
+}
+/* icon after effect */
+.social-icon--github .tooltip::after{
+  border-top-color: #000;
+}
+
+nav {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #181818;
+    border-radius: 8px;
+    color: #57c7c7;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    float: none;
+    z-index: 1;
+    text-shadow: 0px 0px 8px #438eacb7;
+    display: inline-block;
+    text-align: center;
+    transition: 0.4s;
+}
+
+/* Navbar başlangıcı */
+.navbar {
+background: #151515;
+box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
+height: 60px;
+width: 100%;
+position: fixed;
+bottom: 0;
+right: 0.3px;
+}
+
+.navbar a.active {
+  float: left;
+}
+/* Navbar Bitişi */ 
+
+
+/* CodeSolidarity Template */
